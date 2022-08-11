@@ -8,5 +8,5 @@ The company currently has scores from two credit rating providers, yet has a man
 
 The analysis presents alternative credit socring models using supervised machine learning methods that combine these scores and other available data. The data is from a private direct payment processing company. Only features pertaining to the analysis are shown in the dataset. A logistic regression model and a KNN model will be compared to score 1 and score 2 by themselves as well as the interaction term of both. The hypothesis is that ML models can provide additional insight to the independent scores.   
 
-The result of this analysis should advise the company on a model that will make their business more profitable.
+The result of this analysis should advise the company on a model that will make their business more profitable. The results are included in the notebook.
 
