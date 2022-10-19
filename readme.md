@@ -10,3 +10,15 @@ The analysis presents alternative credit socring models using supervised machine
 
 The results are included in the notebook.
 
+## Feature description
+- `score_1`: client risk category depending on score from provider 1. Five possible categories: excellent, good, medium, bad  and no data (nd)
+- `risk_score1`: binary variable according to risk profile from provider 1. Excellent and good are assigned a score of 0. The rest of the categories get a score of 1. 
+- `score_2`:  client risk category depending on score from provider 2. Five possible categories: excellent, good, medium, bad  and no data (nd)
+- `risk_score2`: binary variable according to risk profile from provider 2. Excellent and good are assigned a score of 0. The rest of the categories get a score of 1. 
+- `interaction_1`: interaction term between score_1 and score_2. If both have a score of 1, the variable will be 1, i.e a risky client. In other cases, the variable will be 0.  
+- `interaction_2`: its a more stringent definition of risk. Only the combinations of excellent, excellent and good,excellent in both permutations are considered 0. The rest are considered 1 (i.e risky). 
+- `transaction`: es is the dollar amount of the transaction
+- `bad_transaction`: binary variable where 1 corresponds to a bounced transaction (bad electronic check) and 0 is a succesful transaction (i.e the customer had the necessary funds). 
+- `state`: two letters corresponding to the state in the United States
+- `population`: binary variable where 1 is assigned to the most populous states: California, Texas, Florida, New York y Pennsylvania 
+- `sc_control`: binary variable where 1 is assigned to the state of South Carolina. It has a disproportionate amount of transactions in the dataset for the size of its population. 
