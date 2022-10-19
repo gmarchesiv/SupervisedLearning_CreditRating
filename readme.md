@@ -7,7 +7,7 @@ A payment gateway is a merchant service provided by an e-commerce application co
 The company currently has access to scores from two credit rating providers, yet still uses a manual process to approve the transactions. Unless they get specific confirmation by phone from the customer's bank that the customer's account is empty, the transaction is approved. Hence, they are not leveraging the data from the providers. Bad (insolvent) transactions are frequent. The client wants to know how to use the data they have effectively to have a better risk model and be more profitable. The sector in which the company operates is risky. The commerces do not take credit cards, only direct payments. Commerces that use these methods generally attract riskier clients.
 
 ## Objective
-The objective of the project is to help the company maximize profits by approving the most amount of good transactions and limiting the bad ones. 
+The objective of the project is to help the company maximize profits by approving the most amount of good transactions and limiting the bad ones. The business loses 100% of bad transactions and charges 5% of good transactions.
 
 The analysis presents alternative credit scoring models using supervised machine learning methods that combine these scores and other available data. The data is from a private direct payment processing company. Only features pertaining to the analysis are shown in the dataset. 
 
